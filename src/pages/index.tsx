@@ -17,15 +17,20 @@ export default function Home() {
   </>)
   const [title, setTitle] = useState('')
   const [image, setImage] = useState('/platillo-principal.png')
-  const [ active, setActive ] = useState(0)
+  const [active, setActive] = useState(0)
 
 
   return (
     <main className="overflow-x-hidden">
 
       <section>
-        <div className="w-full min-h-[450px]">
-
+        <div className="w-full md:min-h-[800px] min-h-[450px] object-cover object-center bg-main-banner bg-center bg-no-repeat bg-cover flex justify-center items-center">
+          <div className="bg-[rgba(0,0,0,.85)] md:w-[700px] md:h-[400px] w-[310px] rounded-lg flex justify-center items-center text-center text-white shadow-lg p-10">
+            <div>
+              <h1 className="uppercase md:text-4xl text-xl font-semibold text-center">Tentación del mar con texturas de la tierra</h1>
+              <h6 className="uppercase md:text-lg text-sm tracking-[.25em] mt-4 text-center font-light">By Zuleidy Castillo</h6>
+            </div>
+          </div>
         </div>
 
       </section>
@@ -38,8 +43,6 @@ export default function Home() {
         <Image src="/small-tomato.png" width={150} height={150} alt="small tomato" className="absolute top-40 md:right-24 right-[-100px] rotate-[20deg] drop-shadow -z-10" />
         <Image src="/hinojo.png" width={150} height={150} alt="hinojo" className="absolute top-96 left-[-120px] rotate-[50deg] drop-shadow -z-10" />
         <Image src="/hinojo.png" width={150} height={150} alt="hinojo" className="absolute bottom-0 md:right-[-120px] right-[-60px] rotate-[-50deg] drop-shadow -z-10" />
-        <h1 className="uppercase text-4xl font-semibold text-center">Tentación del mar con texturas de la tierra</h1>
-        <h6 className="uppercase text-lg tracking-[.25em] mt-4 text-center">By Zuleidy Castillo</h6>
         <div className="flex justify-center text-center">
           <p className="mt-4 md:w-1/2 md:px-0 px-6">
             ¡Bienvenidos!, En este sitio, encontrarás paso a paso la elaboración de un delicioso platillo que seguramente conquistará tu paladar.
@@ -100,10 +103,12 @@ export default function Home() {
                       </p>
                     </>)
 
-              
+
                     setActive(1)
+                    setImage('/canelones.png')
+
                   }}
-                    className={ `bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${ active == 1 ? 'opacity-100' : 'opacity-50' } hover:opacity-100 transition-all` }>1</a>
+                    className={`bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${active == 1 ? 'opacity-100' : 'opacity-50'} hover:opacity-100 transition-all`}>1</a>
                 </div>
 
                 <div className="flex items-center justify-center">
@@ -143,10 +148,11 @@ export default function Home() {
                     </>)
 
                     setActive(2)
+                    setImage('/caldo.png')
 
-              
+
                   }}
-                    className={ `bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${ active == 2 ? 'opacity-100' : 'opacity-50' } hover:opacity-100 transition-all` }>2</a>
+                    className={`bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${active == 2 ? 'opacity-100' : 'opacity-50'} hover:opacity-100 transition-all`}>2</a>
                 </div>
 
                 <div className="flex items-center justify-center">
@@ -184,10 +190,11 @@ export default function Home() {
                     </>)
 
                     setActive(3)
+                    setImage('/mousseline.png')
 
-              
+
                   }}
-                    className={ `bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${ active == 3 ? 'opacity-100' : 'opacity-50' } hover:opacity-100 transition-all` }>3</a>
+                    className={`bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${active == 3 ? 'opacity-100' : 'opacity-50'} hover:opacity-100 transition-all`}>3</a>
                 </div>
 
                 <div className="flex items-center justify-center">
@@ -210,9 +217,11 @@ export default function Home() {
                     </>)
 
                     setActive(4)
-              
+                    setImage('/arena.png')
+
+
                   }}
-                    className={ `bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${ active == 4 ? 'opacity-100' : 'opacity-50' } hover:opacity-100 transition-all` }>4</a>
+                    className={`bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${active == 4 ? 'opacity-100' : 'opacity-50'} hover:opacity-100 transition-all`}>4</a>
                 </div>
 
                 <div className="flex items-center justify-center">
@@ -250,10 +259,12 @@ export default function Home() {
                     </>)
 
                     setActive(5)
+                    setImage('/pimientos.png')
 
-              
+
+
                   }}
-                    className={ `bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${ active == 5 ? 'opacity-100' : 'opacity-50' } hover:opacity-100 transition-all` }>5</a>
+                    className={`bg-slate-600 rounded-full h-8 w-8 text-white flex justify-center items-center ${active == 5 ? 'opacity-100' : 'opacity-50'} hover:opacity-100 transition-all`}>5</a>
                 </div>
 
               </div>
