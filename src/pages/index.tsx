@@ -1,7 +1,14 @@
 import Image from "next/image";
+import { useState } from "react";
 
 
 export default function Home() {
+
+
+  const [ ingredients, setIngredients ] = useState()
+  const [ preparation, setPreparation ] = useState()
+  const [ image, setImage ] = useState('/platillo-principal.png')
+
   return (
     <main className="overflow-x-hidden">
 
@@ -24,9 +31,8 @@ export default function Home() {
         <h6 className="uppercase text-lg tracking-[.25em] mt-4 text-center">By Zuleidy Castillo</h6>
         <div className="flex justify-center text-center">
           <p className="mt-4 md:w-1/2 md:px-0 px-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.
+            ¡Bienvenidos!, En este sitio, encontrarás paso a paso la elaboración de un delicioso platillo que seguramente conquistará tu paladar. 
+            Desde la selección de los ingredientes hasta la presentación final, ¡Disfrutalo!
           </p>
         </div>
 
@@ -72,7 +78,7 @@ export default function Home() {
             <Image src="/almeja.png" width={100} height={100} alt="small tomato" className="absolute md:top-36 md:right-28 top-[50px] right-[20px] rotate-[20deg] drop-shadow -z-10 blur-sm" />
             <Image src="/almeja.png" width={200} height={200} alt="small tomato" className="absolute md:top-28 md:left-16 top-[30px] left-0 md:rotate-[-40deg] rotate-[-20deg] drop-shadow -z-10 blur-[1px]" />
             <div className="relative">
-              <Image src="/platillo-principal.png" width={600} height={600} alt="Platillo por zuleidy castillo" />
+              <Image src={ image } width={600} height={600} alt="Platillo por zuleidy castillo" />
             </div>
           </div>
         </div>
