@@ -24,8 +24,8 @@ export default function Home() {
     <main className="overflow-x-hidden">
 
       <section>
-        <div className="w-full md:min-h-[800px] min-h-[450px] object-cover object-center bg-main-banner bg-center bg-no-repeat bg-cover flex justify-center items-center">
-          <div className="bg-[rgba(0,0,0,.85)] md:w-[700px] md:h-[400px] w-[310px] rounded-lg flex justify-center items-center text-center text-white shadow-lg p-10">
+        <div className="w-full md:min-h-[800px] min-h-[430px] object-cover object-center bg-main-banner bg-bottom bg-no-repeat bg-cover flex justify-center items-end">
+          <div className="bg-[rgba(0,0,0,.85)] md:h-[400px] w-full rounded-lg flex justify-center items-center text-center text-white shadow-lg px-10 py-6">
             <div>
               <h1 className="uppercase md:text-4xl text-xl font-semibold text-center">Tentación del mar con texturas de la tierra</h1>
               <h6 className="uppercase md:text-lg text-sm tracking-[.25em] mt-4 text-center font-light">By Zuleidy Castillo</h6>
@@ -43,11 +43,13 @@ export default function Home() {
         <Image src="/small-tomato.png" width={150} height={150} alt="small tomato" className="absolute top-40 md:right-24 right-[-100px] rotate-[20deg] drop-shadow -z-10" />
         <Image src="/hinojo.png" width={150} height={150} alt="hinojo" className="absolute top-96 left-[-120px] rotate-[50deg] drop-shadow -z-10" />
         <Image src="/hinojo.png" width={150} height={150} alt="hinojo" className="absolute bottom-0 md:right-[-120px] right-[-60px] rotate-[-50deg] drop-shadow -z-10" />
-        <div className="flex justify-center text-center">
-          <p className="mt-4 md:w-1/2 md:px-0 px-6">
-            ¡Bienvenidos!, En este sitio, encontrarás paso a paso la elaboración de un delicioso platillo que seguramente conquistará tu paladar.
-            Desde la selección de los ingredientes hasta la presentación final, ¡Disfrutalo!
-          </p>
+        <div className="px-6 md:max-w-xl mx-auto md:text-center">
+            <p>
+            Canelones de tinta de calamar rellenos de una mousseline de merluza con cebolla e hinojo, acompañados de pimientos confitados con hinojo sobre una cama de arena de aceituna y caldo corto con limón.
+            </p>
+            <p className="mt-4">
+            En el relleno encontramos una mezcla del sabor del mar con el dulce aroma de la cebolla y el anisado toque del hinojo. los pimientos confitados sirven de contraste dulce al salado de los canelones y para refrescar el paladar todo esto se encuentra encima de un caldo corto con limón y una crujiente arena de aceituna que juntos se combinan para hacer una experiencia única en el paladar.
+            </p>
         </div>
 
         <div className="grid md:grid-cols-2 mt-12">
